@@ -1,7 +1,6 @@
 package com.desafioSpring.springValores.service;
 
 import com.desafioSpring.springValores.dto.StatisticsDto;
-import com.desafioSpring.springValores.entity.Statistics;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;

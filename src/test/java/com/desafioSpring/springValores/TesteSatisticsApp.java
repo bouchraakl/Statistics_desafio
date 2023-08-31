@@ -44,7 +44,7 @@ public class TesteSatisticsApp {
     }
 
     @Test
-    public void testeSomaTodos(){
+    public void testeSomaTodos() {
         for (int i = 0; i < 20; i++) {
             valoresTeste.add((double) i);
         }
@@ -53,7 +53,7 @@ public class TesteSatisticsApp {
     }
 
     @Test
-    public void testeValorMaximo(){
+    public void testeValorMaximo() {
         for (int i = 0; i < 20; i++) {
             valoresTeste.add((double) i);
         }
@@ -62,7 +62,7 @@ public class TesteSatisticsApp {
     }
 
     @Test
-    public void testeValorMinimo(){
+    public void testeValorMinimo() {
         for (int i = 0; i < 20; i++) {
             valoresTeste.add((double) i);
         }

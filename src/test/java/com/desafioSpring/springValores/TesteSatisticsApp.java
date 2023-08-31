@@ -34,7 +34,6 @@ public class TesteSatisticsApp {
                 statisticsService.calculateValores(valoresTeste).getMediano());
     }
 
-
     @Test
     public void testecalcularDesfioPadrao() {
         for (int i = 0; i < 20; i++) {
@@ -42,5 +41,32 @@ public class TesteSatisticsApp {
         }
         Assertions.assertEquals(5.766281297335398,
                 statisticsService.calculateValores(valoresTeste).getDesvio_padrao());
+    }
+
+    @Test
+    public void testeSomaTodos(){
+        for (int i = 0; i < 20; i++) {
+            valoresTeste.add((double) i);
+        }
+        Assertions.assertEquals(190,
+                statisticsService.calculateValores(valoresTeste).getSoma());
+    }
+
+    @Test
+    public void testeValorMaximo(){
+        for (int i = 0; i < 20; i++) {
+            valoresTeste.add((double) i);
+        }
+        Assertions.assertEquals(19,
+                statisticsService.calculateValores(valoresTeste).getValorMaximo());
+    }
+
+    @Test
+    public void testeValorMinimo(){
+        for (int i = 0; i < 20; i++) {
+            valoresTeste.add((double) i);
+        }
+        Assertions.assertEquals(0,
+                statisticsService.calculateValores(valoresTeste).getValorMininmo());
     }
 }

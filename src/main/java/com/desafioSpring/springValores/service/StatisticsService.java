@@ -15,7 +15,32 @@ public class StatisticsService {
         statistics.setDesvio_padrao(calcularDesfioPadrao(valores, listInputSize));
         statistics.setQtde(listInputSize);
         statistics.setMediano(calcularmediano(valores, listInputSize));
+        statistics.setSoma(calcularSoma(valores));
+        statistics.setValorMaximo(calcularValorMax(valores));
+        statistics.setValorMininmo(calcularValorMin(valores));
         return statistics;
+    }
+
+    private double calcularValorMin(List<Double> valores) {
+        if (valores == null || valores.size() == 0) {
+            return Integer.MAX_VALUE;
+        }
+        return Collections.min(valores);
+    }
+
+    private double calcularValorMax(List<Double> valores) {
+        if (valores == null || valores.size() == 0) {
+            return Integer.MIN_VALUE;
+        }
+        return Collections.max(valores);
+    }
+
+    private double calcularSoma(List<Double> valores) {
+        double soma = 0;
+        for (int i = 0; i < valores.size(); i++) {
+             soma += valores.get(i);
+        }
+        return soma;
     }
 
     private double calcularmediano(List<Double> valores, Integer listInputSize) {

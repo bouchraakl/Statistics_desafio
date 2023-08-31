@@ -11,4 +11,9 @@ public class StatisticsDto {
     private int qtde;
 
     private double mediano;
+
+    private double soma;
+
+    private double valorMaximo;
+    private double valorMininmo;
 }

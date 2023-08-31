@@ -21,4 +21,8 @@ public class Statistics {
 
     private double mediano;
 
+    private double soma;
+    private double valorMaximo;
+    private double valorMininmo;
+
 }
